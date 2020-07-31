@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="infoBox" class="notification" disabled></div>
+  <div id="errorBox" class="notification" disabled></div>
+  <div id="main"></div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  <script src="./node_modules/handlebars/dist/handlebars.min.js"></script>
+  <script src="./node_modules/sammy/lib/min/sammy-0.7.6.min.js"></script>
+  <script src="./node_modules/sammy/lib/min/plugins/sammy.handlebars-0.7.6.min.js"></script>
+  <script type="module" src="scripts/app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/7.13.1/firebase-auth.js"></script>
+
+
+  <script>
+    var firebaseConfig = {
+      apiKey: "AIzaSyAQghsSKnv2OaP-jO2F2E5yue0Ngbo5wvU",
+      authDomain: "skelet-softuni.firebaseapp.com",
+      databaseURL: "https://skelet-softuni.firebaseio.com",
+      projectId: "skelet-softuni",
+      storageBucket: "skelet-softuni.appspot.com",
+      messagingSenderId: "946575275706",
+      appId: "1:946575275706:web:9dc54a244c74d3c2933483"
+    };
+    firebase.initializeApp(firebaseConfig);
+  </script>
+</body>
+
+</html>
